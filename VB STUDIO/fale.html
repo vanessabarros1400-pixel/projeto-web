@@ -50,14 +50,35 @@
             </div>
             </nav>
         </div>
-        <div class = "content text-center">
+        <div class = "content form_fale">
             <br>
-            <h2 class="font-weight-bolder">Como chegar</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.3566484378107!2d-43.56141262380682!3d-22.90021253763782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be15839e68c4f%3A0x588a284ae162bc38!2sSenac%20Campo%20Grande!5e0!3m2!1spt-BR!2sbr!4v1759274884128!5m2!1spt-BR!2sbr" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h5 class="font-weight-bolder">Estamos Localizados na Rua Barcelos Domingos, 58 - Campo Grande, Rio de Janeiro - RJ</h5>
-             <a href="https://wa.me/5521989191256" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-     alt="WhatsApp" width="40" height="40"><br><button type="button" class="btn btn-success">Fale Conosco</button></a>
+            <h2 class="font-weight-bolder titulo">Fale Conosco</h2>
+            <form class="row g-3">
+                <div class="col-md-12">
+                    <label for="inputName" class="form-label">Informe seu Nome</label>
+                    <input type="text" class="form-control" id="nome">
+                </div>             
+                
+                <div class="col-md-12">
+                    <label for="inputAssunto" class="form-label">Selecione o Assunto</label>
+                    <select id="assunto" class="form-select">
+                        <option selected>Selecione...</option>
+                        <option>Sugestões</option>
+                        <option>Críticas</option>
+                        <option>Elogios</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+                    <div class="col-md-12">
+                        <label for="inputRecado" class="form-label">Deixe seu Recado</label>
+                        <textarea class="form-control textarea" id="recado" rows="5" cols="10" placeholder="Deixe seu recado aqui..." maxlength="200"></textarea>
+                    </div> 
+                
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">CONFIRMAR</button>
+                    <button type="reset" class="btn btn-danger">LIMPAR</button>
+                </div>
+            </form>
         </div>
         <div class = "footer">
             <footer id="myFooter">
