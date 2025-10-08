@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="Funcionario">funcionário: </label>
+        <input type="text" id="funcionário">
+        <br><br>
+        <label for="valor">Informe o valor da hora trabalhada: </label>
+        <input type="text" id="vh">
+        <br><br>
+        <label for="horas">Informe a quantidade de horas trabalhada: </label>
+        <input type="text" id="quantidade de horas">
+        <br><br>
+        <label for=>Informe a quantidade de dependentes: </label>
+        <input type="text" id="dep"> 
+        <br><br>
+        <label > o seu salario será de R$: </label>
+        <input type="text" id="salario"> 
+        <br><br>
+        <button type="button" onclick="calcular()">CONFIRMAR</button>
+        <button type="reset">LIMPAR</button> 
+        <br><br>
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+    function calcular(){
+        funcionário = document.getElementById("nome").value
+        valor= parseFloat(document.getElementById("valor").value)
+        hor = parseFloat(document.getElementById(" horas").value)
+        dep= parseFloat(document.getElementById("dep").value)
+        sal = (hora * valor) + (dep * 200)
+        IF (sal < 5000){
+            sal_bonus = sal + (sal * 0.10)
+        }
+        document.getElementById("salario").value =
+        
+    }
+    
+</body>
+</html>
