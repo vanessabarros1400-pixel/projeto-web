@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio2</title>
+</head>
+<body>
+    <form>
+        <label>Informe seu Nome:</label>
+        <input type="text" id="nome">
+        <br><br>
+         <label>Informe seu Salário:</label>
+        <input type="text" id="salario">
+        <br><br>
+        <button type="button" onclick="calcular()">CONFIRMAR</button>
+        <button type="reset">LIMPAR</button>
+        <br><br>
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+    function calcular() {
+         nome = document.getElementById("nome").value;
+         salario = document.getElementById("salario").value;
+         if (salario <= 1280) {
+            aumento = salario * 0.20;
+             novo_salario = parseFloat(salario) + parseFloat(aumento);
+             }
+             else if (salario <= 2700) {
+             aumento = salario * 0.15;
+             novo_salario = parseFloat(salario) + parseFloat(aumento);
+             }
+             else if (salario > 3500) {
+             aumento = salario * 0.10;
+             novo_salario = parseFloat(salario) + parseFloat(aumento);
+             }
+             else
+             aumento = salario * 0.05;
+            alert("Olá, " + nome + ", seu aumento foi de R$ " + aumento + ". Seu novo salário sera de R$ " + novo_salario + ".");
+            }
+</script>

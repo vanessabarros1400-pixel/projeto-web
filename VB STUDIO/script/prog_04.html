@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Selecione o Turno:</label>
+        <select id="turno" onchange="confirmar()">
+            <option value="0">Selecione</option>
+            <option value="M">Matutino</option>
+            <option value="V">Vespertino</option>
+            <option value="N">Noturno</option>
+        </select>
+        <br><br>
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+    function confirmar(){
+        turno = document.getElementById("turno").value
+        if (turno == "M"){
+            alert("Bom dia!")
+        }
+        else if (turno == "V"){
+            alert("Boa tarde!")
+        }
+        else{
+            alert("Boa noite!")
+        }
+        document.getElementById("turno").value = "0"
+    }
+</script>

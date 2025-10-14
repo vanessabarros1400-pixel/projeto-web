@@ -63,7 +63,7 @@
                     <input type="email" class="form-control" id="email">
                 </div>
                 <div class="col-6">
-                    <label for="inputEndereco" class="form-label">Endereço</label>
+                    <label for="inputRua" class="form-label">Rua</label>
                     <input type="text" class="form-control" id="endereco" readonly>
                 </div>
                 <div class="col-2">
@@ -84,11 +84,12 @@
                 </div>
                 <div class="col-3">
                     <label for="inputCEP" class="form-label">Informe seu CEP</label>
-                    <input type="text" class="form-control" id="cep" maxlength="8">
+                    <input type="text" class="form-control" id="cep" maxlength="8" onblur="pesquisacep(this.value)">
                 </div>
                 <div class="col-2">
                     <label for="inputTelefone" class="form-label">Informe seu Telefone</label>
-                    <input type="text" class="form-control" id="telefone" placeholder="(00)00000-0000" maxlength="14">
+                    <input type="text" class="form-control" id="telefone" placeholder="(00)00000-0000" maxlength="14"
+                    onkeypress="mascara_telefone (this)">
                 </div>
                 <div class="col-md-3">
                     <label for="inputPasseio" class="form-label">Selecione o Passeio</label>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Informe um Determinado Ano:</label>
+        <input type="text" id="ano" onkeydown="return executar()">
+        <br><br>
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+    function executar(e){
+        tecla = (window.event) ? event.keyCode : e.which
+        if (tecla == 13){
+            ano = document.getElementById("ano").value
+        if (ano % 4 == 0){
+            alert("O Ano é Bissexto!")
+        }
+        else{
+            alert("O Ano não é Bissexto!")
+        }
+        document.getElementById("ano").value = " "
+        }
+    }
+</script>

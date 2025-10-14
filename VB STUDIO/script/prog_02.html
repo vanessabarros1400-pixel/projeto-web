@@ -1,0 +1,32 @@
+<<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nome">Informe o seu Nome: </label>
+        <input type="text" id="nome">
+        <br><br>
+         <label for="nota1">Informe a sua 1 nota: </label>
+        <input type="text" id="nota1">
+        <br><br>
+        <label for="nota2">Informe a sua 2 nota: </label>
+        <input type="text" id="nota2">
+        <br><br>
+        <button type="button" onclick="confirmar()">CONFIRMAR</button>
+        <button type="reset">LIMPAR</button>
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+    function confirmar(){
+        nome = document.getElementById("nome").value
+        nota1 = parseFloat(document.getElementById("nota1").value)
+        nota2 = parseFloat(document.getElementById("nota2").value)
+        media = (nota1 + nota2) / 2
+        alert("Olá, " + nome + ", Sua nota final foi " + media + ".")
+    }
+</script>
