@@ -64,7 +64,7 @@
                 </div>
                 <div class="col-6">
                     <label for="inputRua" class="form-label">Rua</label>
-                    <input type="text" class="form-control" id="endereco" readonly>
+                    <input type="text" class="form-control" id="rua" readonly>
                 </div>
                 <div class="col-2">
                     <label for="inputNumero" class="form-label">Número</label>
@@ -84,12 +84,12 @@
                 </div>
                 <div class="col-3">
                     <label for="inputCEP" class="form-label">Informe seu CEP</label>
-                    <input type="text" class="form-control" id="cep" maxlength="8" onblur="pesquisacep(this.value)">
+                    <input type="text" class="form-control" id="cep" maxlength="8" onblur="pesquisacep(this.value);">
                 </div>
                 <div class="col-2">
                     <label for="inputTelefone" class="form-label">Informe seu Telefone</label>
                     <input type="text" class="form-control" id="telefone" placeholder="(00)00000-0000" maxlength="14"
-                    onkeypress="mascara_telefone (this)">
+                    onkeypress="mascara_tel(this)">
                 </div>
                 <div class="col-md-3">
                     <label for="inputPasseio" class="form-label">Selecione o Passeio</label>
@@ -137,3 +137,4 @@
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
