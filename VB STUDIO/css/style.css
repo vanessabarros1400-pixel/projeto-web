@@ -1,7 +1,7 @@
 container{
     margin-top: 2%;
     width: 60%;
-    background-color: bisque;
+    background-color: rgb(148, 132, 140);
 }
 
 .mainav{
@@ -36,7 +36,7 @@ container{
   padding: 0;
   text-decoration: none;
   text-align: center;
-  color: #fefefe;
+  color: #9e8a93;
   font-size: 1.5625rem;
   font-weight: normal;
   line-height: 2em;
@@ -78,7 +78,7 @@ container{
 
 .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
   color: #55acee;
-  background: #fefefe;
+  background: #978590;
   border-color: #55acee;
 }
 
@@ -93,7 +93,7 @@ container{
 
 .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
   color: #007bb5;
-  background: #fefefe;
+  background: #af9bad;
   border-color: #007bb5;
 }
 
