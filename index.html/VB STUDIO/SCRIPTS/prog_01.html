@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nome">Informe o seu Nome: </label>
+        <input type="text" id="nome">
+        <br><br>
+         <label for="idade">Informe a sua Idade: </label>
+        <input type="text" id="idade">
+        <br><br>
+        <button type="button" onclick="confirmar()">CONFIRMAR</button>
+        <button type="reset">LIMPAR</button>
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+    function confirmar(){
+        nome = document.getElementById("nome").value.toUpperCase()
+        idade = document.getElementById("idade").value
+        ano_nasc = 2025 - idade
+        alert("Olá, " + nome + ", você nasceu em " + ano_nasc + ".")
+    }
+</script>
