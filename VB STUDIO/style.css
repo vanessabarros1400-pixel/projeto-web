@@ -2,16 +2,18 @@ body{
   background-image: url("../img/fundo.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-color: rgb(126, 98, 112);
 }
 
 .container{
     margin-top: 2%;
     width: 60%;
-    background-color: bisque;
+    background-color: rgb(161, 128, 144);
 }
 
 .mainav{
     padding-top: 2%;
+    background-color: rgb(161, 128, 144);
 }
 
 .rodape{
